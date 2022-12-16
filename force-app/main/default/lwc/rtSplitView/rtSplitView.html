@@ -1,0 +1,17 @@
+<template>
+    <div onmouseup={onMouseUp} onmouseleave={onMouseLeave}>
+        <div class="splitter" onmousemove={onMouseMove}>
+            <div data-my-id="first" class="first">
+                <div class="wrapper"><slot name = "textInFirstHalf">Default1</slot></div>
+            </div>
+            <div
+                class="separator"
+                onmousedown={onMouseDown}
+                onmouseup={onMouseUp}
+            ></div>
+            <div data-my-id="second" class="second">
+                <div class="wrapper"><slot name = "textInSecondHalf">Default2</slot></div>
+            </div>
+        </div>
+    </div>
+</template>

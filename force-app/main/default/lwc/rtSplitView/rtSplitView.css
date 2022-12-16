@@ -1,0 +1,28 @@
+.splitter {
+    display: flex;
+    min-height: 50px;
+}
+
+.separator {
+    flex-wrap: wrap;
+    cursor: col-resize;
+    background: #535353;
+    width: 10px;
+}
+
+.first {
+    flex-wrap: wrap;
+    flex-grow: 1;
+
+    min-width: 10px;
+}
+.wrapper {
+    overflow: scroll;
+    overflow-wrap: break-word;
+}
+.second {
+    flex-wrap: wrap;
+    flex-grow: 1;
+
+    min-width: 10px;
+}
